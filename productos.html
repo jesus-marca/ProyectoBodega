@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <title>Articulos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <a href="indice.html"> Regresar</a>
+        <div class="logo" align="center" ><img src="img/logo.png" alt="" id="log" height="350"></div>
+        <script type="text/javascript" src="js/javascript.js"></script>
+        <h1>Escoja sus productos</h1>
+        <link type="text/css" href="css/estilo2.css" rel="stylesheet" media="screen"/>
+    </head>
+ 
+ 
+    <body >
+        
+        <div id="todo" class="todoNo">
+        <div id="menu" class="menuNo">
+        
+        
+        <!--Producto del 1 al 9-->
+        <div id="div1" name="DIVS"></div>
+        <div id="div2" name="DIVS"></div>
+        <div id="div3" name="DIVS"></div>
+        <div id="div4" name="DIVS"></div>
+        <div id="div5" name="DIVS"></div>
+        <div id="div6" name="DIVS"></div>
+        <div id="div7" name="DIVS"></div>
+        <div id="div8" name="DIVS"></div>
+        <div id="div9" name="DIVS"></div>
+        <div id="div10" name="DIVS"></div>
+        <div id="div11" name="DIVS"></div>
+        <div id="div12" name="DIVS"></div>
+        <div id="div13" name="DIVS"></div>
+        <div id="div14" name="DIVS"></div>
+        <div id="div15" name="DIVS"></div>
+        <div id="div16" name="DIVS"></div>
+        <div id="div17" name="DIVS"></div>
+        <div id="div18" name="DIVS"></div>
+        <div id="div19" name="DIVS"></div>
+        <div id="div20" name="DIVS"></div>
+        <div id="div21" name="DIVS"></div>
+
+        
+        
+        <!--Botones de compra-->
+        <div id="divbotones">
+        <input type="button" id="botonTotal" value="Calcular total"/>
+        <input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+        <input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+        <input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+        </div>
+        
+        
+        <!--zona de compra, tablas, formularios, etc.-->
+        <div id="divZonaCompra" class="divZonaCompraNo">
+        
+        
+        <!--Carrito de la compra-->
+        <div id="divTotal" class="divsNo">
+            <p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+            <table id="tablaTotal"></table>
+        </div>
+        
+        
+        <!--Datos personales--> 
+        <div id="divDatos" class="divsNo">
+        <p><b>Introduzca sus datos personales:</b></p>
+        
+        <div id="divDatosPersonales0">
+        <div id="divDatosPersonales1">
+        <label>Nombre completo:</label><br/>
+        <input type="text" id="nombre" value="" size="26" /><br/>
+        
+        
+        <label>DNI:</label><br/>
+        <input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+        
+        
+        <label>Fecha de nacimiento:</label><br/>
+        <select id="fechaNacimientoDia">
+            <option value=""> dia </option>
+        </select>
+        <select id="fechaNacimientoMes">
+            <option value="">      mes</option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select> 
+        <select id="fechaNacimientoAnio">
+            <option value="">  año </option>
+        </select><br/>
+        </div>
+        
+        <div id="divDatosPersonales2">
+        <label>Telefono movil:</label><br/>
+        <input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+        
+        <label>Email:</label><br/>
+        <input type="text" id="email1" value="" size="25" /><br/>
+        
+        <label>Repita el email:</label><br/>
+        <input type="text" id="email2" value="" size="25" /> 
+        </div>
+        </div>
+        
+        
+        <div id="divDomicilio">
+        <label>Tipo de via:</label>
+        <select id="tipoDeVia">
+            <option value="Avenida">Avenida</option>
+            <option value="Calle"selected="selected">Calle</option>
+            <option value="Carretera">Carretera</option>
+            <option value="Pasaje">Pasaje</option>
+            <option value="Plaza">Plaza</option>
+            <option value="Residencia">Residencia</option>
+            <option value="Urbanizacion">Urbanizacion</option>
+        </select>     
+        
+        <label>Nombre via:</label>
+        <input type="text" id="viaNombre" value="" size="20" /><br/>
+        
+        <label>Nº/km:</label>
+        <input type="text" id="viaNumero" value="" size="2" />  
+        
+        <label>Bloque:</label>
+        <input type="text" id="viaBloque" value="" size="2" />         
+        
+        <label>Escalera:</label>
+        <input type="text" id="viaEscalera" value="" size="2" />  
+        
+        <label>Piso:</label>
+        <input type="text" id="viaPiso" value="" size="2" /><br/>
+        
+        
+        <label>Localidad:</label>
+        <input type="text" id="localidad" value="" size="13"/>  
+        
+        <label>Codigo Postal:</label>
+        <input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+        
+        <label>Provincia:</label>
+        <select id="provincia">
+            <option value="">          Provincia</option>
+            <option value="15">Huaral</option>
+            <option value="1">Canta</option>
+            <option value="2">Cañete</option>
+
+        </select>
+        </div> 
+        </div> 
+        
+        
+        <!--Datos de pago-->
+        <div id="divPago" class="divsNo">
+        <p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+        
+        
+        <label>Titular de la tarjeta:</label><br/>
+        <input type="text" id="titular" value="" size="26" /><br/>
+        
+        
+        <div id="metodosDePago">
+        <label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+        <label for="visa">
+            <input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+            <img src="img/pago/visa.gif"></img>
+        </label>
+        
+        <label for="masterCard">
+        <input type="radio" id="mastercard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+        <img src="img/pago/mastercard.png"></img>
+        </label>
+         
+        <label for="amex">
+        <input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+        <img src="img/pago/amex.png"></img>
+        </label>
+        
+        <label for="dinner">
+        <input type="radio" id="dinner" name="tarjetas" class="logoTarjetas" value="Dinner">
+        <img src="img/pago/dinner.png"></img>
+        </label>
+        
+        </div>
+        
+         
+        <div id="divNumeroTarjeta">
+        <label>Número tarjeta y CVC:</label><br/>
+        <input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+        <input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+        
+        
+        <select id="mesTarjeta">
+        <option value="">  mes </option>
+        </select>
+        
+        <select id="anioTarjeta">
+        <option value="">  año </option>
+        </select>
+        </div>
+        </div> 
+        </div>
+        </div> 
+        </div>
+        
+    </body>
+    <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <h3>2021 ROSALUIS , Lima - All Rights Reserved  </h3>
+    </footer>
+</html>
